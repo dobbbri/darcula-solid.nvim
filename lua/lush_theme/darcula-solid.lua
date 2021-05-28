@@ -24,7 +24,7 @@ local hsl = lush.hsl
 local bf, it, un = 'bold', 'italic', 'underline'
 
 -- Base colors
-local c0 = hsl(240, 1, 15)
+local c0 = hsl(0, 0, 0)
 local c1 = c0.lighten(5)
 local c2 = c1.lighten(2)
 local c3 = c2.lighten(20).sa(10)
