@@ -39,7 +39,7 @@ local overbg  = c1    -- other backgrounds
 local subtle  = c2    -- out-of-buffer elements
 
 local fg      = hsl(210, 7, 82)
-local comment = hsl(213, 22, 13)    -- comments
+local comment = hsl(213, 22, 23)    -- comments
 local folder  = hsl(202, 9, 57)
 local treebg  = hsl(213, 22, 4)
 local mid     = c2.lighten(10)   -- either foreground or background
