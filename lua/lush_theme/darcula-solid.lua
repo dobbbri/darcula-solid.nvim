@@ -77,11 +77,11 @@ Cursor       { fg=bg,      bg=fg };
 TermCursor   { fg=bg,      bg=fg };
 ColorColumn  { bg=overbg };
 CursorColumn { bg=subtle };
-CursorLine   { CursorColumn };
+CursorLine   { bg=c1 };
 MatchParen   { fg=pop,     bg=mid };
 
 LineNr       { fg=faded };
-CursorLineNr { fg=orange };
+CursorLineNr { fg=orange, bg=c1 };
 SignColumn   { LineNr };
 VertSplit    { fg=overbg,  bg=bg };    -- column separating vertically split windows
 Folded       { fg=comment, bg=overbg };
@@ -105,7 +105,7 @@ Search       { fg=bg,      bg=yellow };    -- Last search pattern highlighting (
 IncSearch    { Search };                   -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
 Substitute   { Search };                   -- |:substitute| replacement text highlighting
 
-Visual       { bg=c2 };                    -- Visual mode selection
+Visual       { bg=c3 };                    -- Visual mode selection
 VisualNOS    { bg=subtle };                -- Visual mode selection when Vim is "Not Owning the Selection".
 
 ModeMsg      { fg=faded };                 -- 'showmode' message (e.g. "-- INSERT -- ")
@@ -182,7 +182,7 @@ Conditional    { Statement };
 Repeat         { Statement };
 Label          { Statement };       -- case, default, etc.
 Operator       { fg=fg };
-Keyword        { Statement };    -- any other keyword
+Keyword        { Statement,  gui=it };    -- any other keyword
 Exception      { fg=red };
 
 PreProc        { fg=orange };    --  generic Preprocessor
